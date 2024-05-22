@@ -13,3 +13,8 @@
 - [SubT MRS Hawkins Multifloor](https://youtu.be/7u0Cc7jWKLM?si=XVvd7E2T7zRvBAuo)
 
 The code and relavent materials will be uploaded upon acceptance of the paper.
+
+
+### Paper
+
+The preprint can be found at: https://arxiv.org/abs/2405.12563
