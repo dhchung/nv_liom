@@ -1,6 +1,6 @@
-# NV-LIO
+# NV-LIOM
 
-![E3 Mapping Result](/resources/nv_lio_ki.png)
+![E3 Mapping Result](/resources/nv_liom_ki.png)
 
 ### Mapping Results of Various Types of Buildings
 #### Buildings at KAIST
