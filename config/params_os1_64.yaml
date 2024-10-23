@@ -1,0 +1,51 @@
+nv_liom:
+  lidar_type: 0 #0: Ouster 1: Hesai
+
+  # Handheld
+  lidarTopic: "/ouster/points"
+  imuTopic: "/ouster/imu"
+
+  horizontal_pixel_num: 1024
+  vertical_pixel_num: 64
+  horizontal_fov: 360.0
+  vertical_max: 22.5
+  vertical_min: -22.5
+  minimum_distance: 1.0
+  maximum_distance: 200.0
+  mapping_voxel_size: 0.4
+  mapping_range: 10.0
+  mapping_closest_range: 0.5
+  mapping_node_distance: 1.0
+  mapping_save_dir: "~/Downloads/NV_LIOM"
+  mapping_in_rgb: 0
+  submap_size: 5
+  show_img: 1
+  gravity: 9.8
+  deskew: 1
+  min_intensity: 0
+  normal_neighbor: 2
+
+  visualization_voxel_size: 0.4
+  visaulization_node_skip: 5
+
+  save_voxel_size: 0.01
+
+  # Ouster
+  lidar_to_imu_R: [1, 0, 0,
+                   0, 1, 0,
+                   0, 0, 1]
+  lidar_to_imu_t: [0, 0, 0]
+
+
+  initial_pose: [1, 0, 0, 0,
+                 0, 1, 0, 0,
+                 0, 0, 1, 0,
+                 0, 0, 0, 1]
+
+  imuAccNoise: 3.9939570888238808e-02
+  imuGyrNoise: 1.5636343949698187e-03
+  imuAccBiasN: 6.4356659353532566e-05
+  imuGyrBiasN: 3.5640318696367613e-05
+
+  correctionNoiseTrans: 0.01
+  correctionNoiseAng: 0.001
