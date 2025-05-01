@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>nv_liom</name>
+  <name>uchi_slam</name>
   <version>0.0.0</version>
-  <description>NV-LIOM Package</description>
+  <description>UCHI-SLAM Package</description>
 
   <maintainer email="haetae.dongha@gmail.com">Dongha Chung</maintainer>
 
   <license>MIT</license>
-  <url type="website">http://github.com/dhchung/nv_liom</url>
+  <url type="website">http://github.com/Yozefu0315/UCHI_SLAM</url>
 
-  <author email="haetae.dongha@gmail.com">Dongha Chung</author>
+  <author email="yozefu0315@gmail.com">Tatsuki Uchida</author>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>cv_bridge</build_depend>
