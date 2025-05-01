@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(nv_liom)
+project(uchi_slam)
 
 add_compile_options(-std=c++14)
 
