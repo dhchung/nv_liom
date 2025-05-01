@@ -1,11 +1,11 @@
 <launch>
-    <rosparam file="$(find nv_liom)/config/params_os1_64.yaml" command="load" />
+    <rosparam file="$(find uchi_slam)/config/params_os1_64.yaml" command="load" />
 
-    <node pkg="nv_liom" type="nv_lidar_deskew_node" name="nv_lidar_deskew_node"  output="screen"></node>
-    <node pkg="nv_liom" type="nv_lidar_projection_node" name="nv_lidar_projection_node"  output="screen"></node>
-    <node pkg="nv_liom" type="nv_normal_extraction_node" name="nv_normal_extraction_node"  output="screen"></node>
-    <node pkg="nv_liom" type="nv_lidar_inertial_mapping_node" name="nv_lidar_inertial_mapping_node"  output="screen"></node>
-    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find nv_liom)/rviz/nv_liom.rviz" />
+    <node pkg="uchi_slam" type="nv_lidar_deskew_node" name="nv_lidar_deskew_node"  output="screen"></node>
+    <node pkg="uchi_slam" type="nv_lidar_projection_node" name="nv_lidar_projection_node"  output="screen"></node>
+    <node pkg="uchi_slam" type="nv_normal_extraction_node" name="nv_normal_extraction_node"  output="screen"></node>
+    <node pkg="uchi_slam" type="nv_lidar_inertial_mapping_node" name="nv_lidar_inertial_mapping_node"  output="screen"></node>
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find nv_liom)/rviz/uchi_slam.rviz" />
 
 </launch>
  
