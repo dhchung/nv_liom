@@ -207,7 +207,7 @@ bool CloudMatching::MatchNormalClouds(const KeyFrame & keyi, const KeyFrame & ke
         covMatrix += normal * normal.transpose();
     }
     covMatrix /= static_cast<float>(matches.size());
-    covMatrix = imu_to_lidar.block(0, 0, 3, 3) * covMatrix * lidar_to_imu.block(0, 0, 3, 3);
+    covMatrix = lidar_to_imu.block(0, 0, 3, 3) * covMatrix * imu_to_lidar.block(0, 0, 3, 3);
 
     Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigenSolver(covMatrix);
     eigenvalues = eigenSolver.eigenvalues();
@@ -374,7 +374,7 @@ bool CloudMatching::MatchNormalCloudsNoDegeneracy(const KeyFrame & keyi, const K
         covMatrix += normal * normal.transpose();
     }
     covMatrix /= static_cast<float>(matches.size());
-    covMatrix = imu_to_lidar.block(0, 0, 3, 3) * covMatrix * lidar_to_imu.block(0, 0, 3, 3);
+    covMatrix = lidar_to_imu.block(0, 0, 3, 3) * covMatrix * imu_to_lidar.block(0, 0, 3, 3);
 
     Eigen::SelfAdjointEigenSolver<Eigen::MatrixXd> eigenSolver(covMatrix);
     eigenvalues = eigenSolver.eigenvalues();
